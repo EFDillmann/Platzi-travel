@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Card{
+    @apply w-44 h-48 rounded-2xl overflow-hidden
+}
+.CardImg{
+    @apply w-full h-28 object-cover
+}
+.CardText{
+    @apply w-full h-full p-3 bg-primary text-white
+}
+.CardTitle{
+    @apply mb-2 text-sm font-bold
+}
+.CardP{
+    @apply text-xs font-medium
+}
