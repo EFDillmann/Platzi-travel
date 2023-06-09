@@ -8,6 +8,7 @@
 .titleSection{
     @apply my-7 text-2xl font-semibold
 }
+
 .Card{
     @apply w-40 h-48 rounded-lg overflow-hidden flex-none border border-solid border-slate-300 transform transition-all hover:-translate-y-2
 }
@@ -25,4 +26,21 @@
 }
 .CardP{
     @apply text-xs font-medium
+}
+
+.TrendingCont{
+    @apply bg-cover bg-center h-80 rounded-xl px-6 py-11
+}
+.TrendingTitle{
+    @apply text-2xl font-extrabold text-tertiary mb-5
+}
+.TrendingP{
+    @apply text-slate-100 text-base font-medium
+}
+
+.FaqTitle{
+    @apply text-primary text-base font-semibold mb-2
+}
+.FaqP{
+    @apply text-black text-xs font-medium
 }

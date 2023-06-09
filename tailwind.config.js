@@ -46,6 +46,12 @@ module.exports = {
         'tertiary' : '#f5c4b7',
         'quaternary' : '#c0e4f2'
       },
+      borderColor : {
+        'primary' : '#e56c70',
+        'secondary' : '#8ed8f6',
+        'tertiary' : '#f5c4b7',
+        'quaternary' : '#c0e4f2'
+      },
       fontFamily : {
         Montserrat : ['Montserrat', 'sans-serif']
       }
