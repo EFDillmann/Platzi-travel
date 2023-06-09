@@ -29,81 +29,80 @@
             </ul>
         </nav>
     </header>
-    <main class="w-full h-screen">
+    <main class="w-full">
         <section id="home" class="bg-sanFrancisco bg-no-repeat bg-cover h-3/5 w-full p-4 flex flex-col items-center gap-4">
             <button class="bg-white w-min rounded-full px-4 py-1 self-end shadow-gray-400 shadow-md"><span class="block h-4 w-4 bg-moon bg-cover mx-auto"></span></button>
             <div id="search" class="w-full flex items-center rounded-full shadow-gray-400 shadow-md">
                 <span class="h-4 w-4 bg-search bg-cover absolute left-32"></span>
-                <textarea class="w-full h-12 resize-none rounded-full" rows="1"></textarea>
+                <textarea class="w-full h-12 resize-none rounded-full focus:z-10 focus:relative" rows="1"></textarea>
                 <p class="font-normal text-sm text-slate-700 absolute left-40">San Francisco</p>
             </div>
-            <button class="bg-white rounded-full mt-80 px-8 py-2 font-semibold text-sm shadow-gray-400 shadow-sm">Explore More</button>
+            <button class="bg-white rounded-full mt-80 px-8 py-2 font-semibold text-sm shadow-gray-400 shadow-sm hover:bg-secondary hover:text-slate-100">Explore More</button>
         </section>
-        <section id="recommended">
-            <h2>Our Recomendations</h2>
-            <div id="slider">
-                <div>
-                    <img src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
-                    <div>
-                        <h3>Norway</h3>
-                        <p>Beautiful landscapes</p>
+        <section id="recommended" class="sections">
+            <h2 class="mt-7 text-2xl font-semibold">Our Recomendations</h2>
+            <div id="slider" class="pt-7 w-auto flex space-x-2 overflow-x-auto overscroll-x-auto scrollbar-hide">
+                <div class="Card">
+                    <img class="CardImg" src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
+                    <div class="CardText">
+                        <h3 class="CardTitle">Norway</h3>
+                        <p class="CardP">Beautiful landscapes</p>
                     </div>
                 </div>
-                <div>
-                    <img src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
-                    <div>
-                        <h3>Norway</h3>
-                        <p>Beautiful landscapes</p>
+                <div class="Card">
+                    <img class="CardImg" src="../dist/images/new_york.jpg" alt="Imagen de los paisajes de Norway">
+                    <div class="CardText2">
+                        <h3 class="CardTitle">New York</h3>
+                        <p class="CardP">Concrete jungle</p>
                     </div>
                 </div>
-                <div>
-                    <img src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
-                    <div>
-                        <h3>Norway</h3>
-                        <p>Beautiful landscapes</p>
+                <div class="Card">
+                    <img class="CardImg" src="../dist/images/yosemite.jpg" alt="Imagen de los paisajes de Norway">
+                    <div class="CardText">
+                        <h3 class="CardTitle">Yosemite</h3>
+                        <p class="CardP">A break from the world</p>
                     </div>
                 </div>
-                <div>
-                    <img src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
-                    <div>
-                        <h3>Norway</h3>
-                        <p>Beautiful landscapes</p>
+                <div class="Card">
+                    <img class="CardImg" src="../dist/images/seattle.jpg" alt="Imagen de los paisajes de Norway">
+                    <div class="CardText2">
+                        <h3 class="CardTitle">Seatle</h3>
+                        <p class="CardP">Big City</p>
                     </div>
                 </div>
-                <div>
-                    <img src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
-                    <div>
-                        <h3>Norway</h3>
-                        <p>Beautiful landscapes</p>
+                <div class="Card">
+                    <img class="CardImg" src="../dist/images/switzerland.jpg" alt="Imagen de los paisajes de Norway">
+                    <div class="CardText">
+                        <h3 class="CardTitle">Switzerland</h3>
+                        <p class="CardP">Big City</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="trending">
-            <h2>Trending Stays</h2>
-            <div>
-                <div>
-                    <h3>Chicago</h3>
-                    <p>2 rooms, bathroom and kitchen.</p>
+        <section id="trending" class="sections">
+            <h2 class="titleSection">Trending Stays</h2>
+            <div class="grid grid-rows-1 space-y-8">
+                <div class="bg-chicago bg-cover bg-center h-80 rounded-xl px-6 py-11">
+                    <h3 class="text-2xl font-extrabold text-tertiary mb-5">Chicago</h3>
+                    <p class="text-slate-100 text-base font-medium">2 rooms, bathroom and kitchen.</p>
                 </div>
-                <div>
-                    <h3>Los Angeles</h3>
-                    <p>4 rooms, 3 bathrooms,  kitchen and private pool.</p>
+                <div class="bg-LA bg-cover bg-center h-80 rounded-xl px-6 py-11">
+                    <h3 class="text-2xl font-extrabold text-tertiary mb-5">Los Angeles</h3>
+                    <p class="text-slate-100 text-base font-medium">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
                 </div>
-                <div>
-                    <h3>Miami</h3>
-                    <p>3 rooms, 2 bathrooms,  kitchen and amazing 
+                <div class="bg-miami bg-cover bg-center h-80 rounded-xl px-6 py-11">
+                    <h3 class="text-2xl font-extrabold text-tertiary mb-5">Miami</h3>
+                    <p class="text-slate-100 text-base font-medium">3 rooms, 2 bathrooms,  kitchen and amazing 
                         sea view.</p>
                 </div>
-                <div>
-                    <h3>Bali</h3>
-                    <p>2 rooms, 2 bathrooms,  kitchen and private
-                        pool.</p>
+                <div class="bg-bali bg-cover bg-center h-80 rounded-xl px-6 py-11">
+                    <h3 class="text-2xl font-extrabold text-tertiary mb-5">Bali</h3>
+                    <p class="text-slate-100 text-base font-medium">2 rooms, 2 bathrooms,  kitchen and private pool.</p>
                 </div>
             </div>
         </section>
-        <section id="FAQS">
-            <h2>FAQs</h2>
+        <section id="FAQS" class="sections">
+            <h2 class="titleSection">FAQs</h2>
             <div>
                 <div>
                     <h3>Payment Methods</h3>
@@ -128,7 +127,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="sections h-full">
         <h2>About Us</h2>
         <ul>
             <li><a href="#">Investors</a></li>

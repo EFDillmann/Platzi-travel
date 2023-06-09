@@ -9,7 +9,7 @@ module.exports = {
         'europe' : "url(./images/europe.jpg)",
         'iceland' : "url(./images/iceland.jpg)",
         'LA' : "url(./images/LA.jpg)",
-        'miami' : "url(./images/miami)",
+        'miami' : "url(./images/miami.jpg)",
         'newYork' : "url(./images/new_york.jpg)",
         'norway' : "url(./images/norway.jpg)",
         'sanFrancisco' : "url(./images/sanFrancisco.jpg)",
@@ -51,6 +51,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
 
