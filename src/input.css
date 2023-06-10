@@ -3,44 +3,44 @@
 @tailwind utilities;
 
 .sections{
-    @apply p-4 w-full
+    @apply p-4 w-full lg:px-12
 }
 .titleSection{
-    @apply my-7 text-2xl font-semibold
+    @apply my-7 text-2xl font-semibold lg:text-4xl dark:text-slate-50
 }
 
 .Card{
-    @apply w-40 h-48 rounded-lg overflow-hidden flex-none border border-solid border-slate-300 transform transition-all hover:-translate-y-2
+    @apply w-40 h-48 rounded-lg overflow-hidden flex-none border border-solid border-slate-300 transform transition-all hover:-translate-y-2 lg:w-72 lg:h-80
 }
 .CardImg{
-    @apply w-full h-28 object-cover
+    @apply w-full h-28 object-cover lg:h-48
 }
 .CardText{
-    @apply w-full h-full p-3 bg-primary text-white
+    @apply w-full h-full p-3 bg-primary text-slate-100 dark:bg-gray-800 dark:text-quaternary
 }
 .CardText2{
-    @apply w-full h-full p-3 bg-slate-100 text-primary
+    @apply w-full h-full p-3 bg-slate-100 text-primary dark:bg-gray-700 dark:text-quaternary
 }
 .CardTitle{
-    @apply mb-2 text-sm font-bold
+    @apply mb-2 text-sm font-bold lg:text-2xl
 }
 .CardP{
-    @apply text-xs font-medium
+    @apply text-xs font-medium lg:text-base
 }
 
 .TrendingCont{
-    @apply bg-cover bg-center h-80 rounded-xl px-6 py-11
+    @apply bg-cover bg-center h-80 rounded-xl px-6 py-11 lg:text-right
 }
 .TrendingTitle{
-    @apply text-2xl font-extrabold text-tertiary mb-5
+    @apply text-2xl font-extrabold text-tertiary mb-5 lg:text-4xl dark:text-quaternary
 }
 .TrendingP{
-    @apply text-slate-100 text-base font-medium
+    @apply text-slate-100 text-base font-medium lg:text-2xl
 }
 
 .FaqTitle{
-    @apply text-primary text-base font-semibold mb-2
+    @apply text-primary text-base font-semibold mb-2 lg:text-4xl dark:text-secondary
 }
 .FaqP{
-    @apply text-black text-xs font-medium
+    @apply text-black text-xs font-medium lg:text-2xl dark:text-quaternary
 }

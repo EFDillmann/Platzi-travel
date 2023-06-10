@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,36 +12,49 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="text-secondary font-Montserrat">
-    <header class="hidden">
-        <nav>
+<body class="text-secondary font-Montserrat dark:bg-gray-900">
+    <header class="hidden lg:block lg:h-16 lg:bg-slate-50 lg:shadow-2xl dark:bg-slate-900">
+        <nav class="h-full px-6 flex justify-between items-center text-lg font-bold">
             <h1>Platzi Travel</h1>
-            <ul id="nav">
+            <ul id="nav" class="flex space-x-12">
                 <li><a href="">Locations</a></li>
                 <li><a href="">Stays</a></li>
                 <li><a href="">FAQS</a></li>
                 <li><a href="">About us</a></li>
             </ul>
-            <ul id="utilities">
-                <li><span>i</span></li>
-                <li><span>i</span></li>
-                <li><span>i</span></li>
+            <ul id="utilities" class="flex space-x-8">
+                <li>
+                    <a href="#">
+                        <span class="w-6 h-6 bg-searchNav bg-cover bg-no-repeat bg-center block"></span>
+                    </a>
+                </li>
+                <li>
+                    <a id="toggleNav" href="#">
+                        <span class="w-6 h-6 bg-moon bg-cover bg-no-repeat bg-center block"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="w-6 h-6 bg-userNav bg-cover bg-no-repeat bg-center block"></span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="w-full">
-        <section id="home" class="bg-sanFrancisco bg-no-repeat bg-cover h-3/5 w-full p-4 flex flex-col items-center gap-4">
-            <button class="bg-white w-min rounded-full px-4 py-1 self-end shadow-gray-400 shadow-md"><span class="block h-4 w-4 bg-moon bg-cover mx-auto"></span></button>
-            <div id="search" class="w-full flex items-center rounded-full shadow-gray-400 shadow-md">
+        <section id="home" class="bg-sanFrancisco bg-no-repeat bg-cover bg-center h-3/5 w-full p-4 flex flex-col items-center gap-4 lg:bg-sanFranciscoDesktop lg:h-[810px] lg:items-start lg:justify-center lg:pl-20">
+            <button id="toggleMob" class=" bg-white w-min rounded-full px-4 py-1 self-end shadow-gray-400 shadow-md lg:hidden dark:bg-gray-900"><span class="block h-4 w-4 bg-moon bg-cover mx-auto"></span></button>
+            <div id="search" class="w-full flex items-center rounded-full shadow-gray-400 shadow-md lg:hidden">
                 <span class="h-4 w-4 bg-search bg-cover absolute left-32"></span>
-                <textarea class="w-full h-12 resize-none rounded-full focus:z-10 focus:relative" rows="1"></textarea>
-                <p class="font-normal text-sm text-slate-700 absolute left-40">San Francisco</p>
+                <textarea class="w-full h-12 p-3 resize-none rounded-full overflow-y-hidden focus:z-10 focus:relative focus:outline-none focus:border focus:border-solid focus:border-gray-900 dark:bg-gray-600 dark:focus:bg-gray-400" rows="1"></textarea>
+                <p class="font-normal text-sm text-slate-700 absolute left-40 dark:text-quaternary">San Francisco</p>
             </div>
-            <button class="bg-white rounded-full mt-80 px-8 py-2 font-semibold text-sm shadow-gray-400 shadow-sm hover:bg-secondary hover:text-slate-100">Explore More</button>
+            <h2 class="hidden lg:block lg:max-w-[404px] lg:text-4xl lg:font-bold dark:text-slate-50">Find More Locations like this</h2>
+            <button class="bg-white rounded-full mt-80 px-8 py-2 font-semibold text-sm shadow-gray-400 shadow-sm hover:bg-secondary hover:text-slate-100 lg:mt-10 lg:text-base lg:py-4 dark:bg-gray-900">Explore More</button>
         </section>
         <section id="recommended" class="sections">
-            <h2 class="mt-7 text-2xl font-semibold">Our Recomendations</h2>
-            <div id="slider" class="pt-7 w-auto flex space-x-2 overflow-x-auto overscroll-x-auto scrollbar-hide">
+            <h2 class="titleSection">Our Recomendations</h2>
+            <div id="slider" class="pt-7 w-auto flex space-x-2 overflow-x-auto overscroll-x-auto scrollbar-hide lg:justify-center">
                 <div class="Card">
                     <img class="CardImg" src="../dist/images/norway.jpg" alt="Imagen de los paisajes de Norway">
                     <div class="CardText">
@@ -81,21 +94,21 @@
         </section>
         <section id="trending" class="sections">
             <h2 class="titleSection">Trending Stays</h2>
-            <div class="grid grid-rows-1 space-y-8">
-                <div class="bg-chicago TrendingCont">
+            <div class="grid grid-rows-1 space-y-8 lg:grid-rows-4 lg:grid-cols-3 lg:space-x-0 lg:space-y-0 lg:gap-8">
+                <div class="bg-chicago TrendingCont lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-3 lg:h-full lg:w-full lg:min-h-[654px] lg:bg-bottom">
                     <h3 class="TrendingTitle">Chicago</h3>
                     <p class="TrendingP">2 rooms, bathroom and kitchen.</p>
                 </div>
-                <div class="bg-LA TrendingCont">
+                <div class="bg-LA TrendingCont lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-5 lg:w-full lg:h-full lg:min-h-[832px] lg:bg-bottom">
                     <h3 class="TrendingTitle">Los Angeles</h3>
                     <p class="TrendingP">4 rooms, 3 bathrooms,  kitchen and private pool.</p>
                 </div>
-                <div class="bg-miami TrendingCont">
+                <div class="bg-miami TrendingCont lg:col-start-2 lg:col-end-4 lg:row-start-3 lg:row-end-4 lg:w-full lg:h-full lg:bg-bottom lg:pt-72">
                     <h3 class="TrendingTitle">Miami</h3>
                     <p class="TrendingP">3 rooms, 2 bathrooms,  kitchen and amazing 
                         sea view.</p>
                 </div>
-                <div class="bg-bali TrendingCont">
+                <div class="bg-bali TrendingCont lg:col-start-2 lg:col-end-4 lg:row-start-4 lg:row-end-5 lg:w-full lg:h-full lg:pt-72">
                     <h3 class="TrendingTitle">Bali</h3>
                     <p class="TrendingP">2 rooms, 2 bathrooms,  kitchen and private pool.</p>
                 </div>
@@ -103,7 +116,7 @@
         </section>
         <section id="FAQS" class="sections">
             <h2 class="titleSection">FAQs</h2>
-            <div class="space-y-4">
+            <div class="space-y-4 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-4">
                 <div>
                     <h3 class="FaqTitle">Payment Methods</h3>
                     <p class="FaqP">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
@@ -127,9 +140,9 @@
             </div>
         </section>
     </main>
-    <footer class="w-full h-full mt-12 text-tertiary border-t border-tertiary border-solid">
-        <h2 class="text-lg font-semibold my-4 px-4">About Us</h2>
-        <ul class="text-sm font-medium space-y-2 px-4">
+    <footer class="w-full h-full mt-12 mb-16 text-tertiary border-t border-tertiary border-solid lg:mb-4">
+        <h2 class="text-lg font-semibold my-4 px-4 lg:text-3xl lg:text-center">About Us</h2>
+        <ul class="text-sm font-medium space-y-2 px-4 lg:text-xl lg:flex lg:space-y-0 lg:gap-3 lg:justify-center">
             <li><a href="#">Investors</a></li>
             <li><a href="#">Jobs</a></li>
             <li><a href="#">Privacy policy</a></li>
@@ -137,18 +150,52 @@
             <li>Platzi Travel, Inc.</li>
             <li>Follow Us</li>
         </ul>
-        <div id="icons" class="mt-4 px-4 flex space-x-3">
-            <span class="w-6 h-6 block bg-twitter bg-cover bg-center"></span>
-            <span class="w-6 h-6 block bg-instagram bg-cover bg-center"></span>
+        <div id="icons" class="mt-4 px-4 flex space-x-3 lg:justify-center lg:space-x-6">
+            <a href="#">
+                <span class="w-6 h-6 block bg-twitter bg-cover bg-center lg:w-10 lg:h-10"></span>
+            </a>
+            <a href="#">
+                <span class="w-6 h-6 block bg-instagram bg-cover bg-center lg:w-10 lg:h-10"></span>
+            </a>
         </div>
-        <nav id="tab-bar" class="w-full h-16 mt-8 border border-t-tertiary border-solid">
+        <nav id="tab-bar" class="w-full h-16 fixed bottom-0 left-0 bg-slate-100 border border-tertiary border-solid lg:hidden dark:bg-gray-900 dark:border-secondary">
             <ul class="h-full flex justify-evenly items-center">
-                <li><span class="w-8 h-8 block bg-home bg-cover bg-center"></span></li>
-                <li><span class="w-8 h-8 block bg-search bg-cover bg-center"></span></li>
-                <li><span class="w-8 h-8 block bg-heart bg-cover bg-center"></span></li>
-                <li><span class="w-8 h-8 block bg-user bg-cover bg-center"></span></li>
+                <li>
+                    <a href="#home">
+                        <span class="w-8 h-8 block bg-home bg-cover bg-center"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#search">
+                        <span class="w-8 h-8 block bg-search bg-cover bg-center"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#trending">
+                        <span class="w-8 h-8 block bg-heart bg-cover bg-center"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="w-8 h-8 block bg-user bg-cover bg-center"></span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </footer>
 </body>
+<script>
+    const htmlElement = document.querySelector("html");
+
+    const toggleMob = document.querySelector("#toggleMob");
+    const toggleNav = document.querySelector("#toggleNav");
+
+    toggleMob.addEventListener("click", () =>{
+        htmlElement.classList.toggle("dark");
+    })
+    toggleNav.addEventListener("click", () =>{
+        htmlElement.classList.toggle("dark");
+    })
+    
+</script>
 </html>

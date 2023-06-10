@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}",
+            "./src/*.html"
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage : {
@@ -24,8 +27,10 @@ module.exports = {
         'instagram' : "url(./svgs/instagram.svg)",
         'moon' : "url(./svgs/moon.svg)",
         'search' : "url(./svgs/search.svg)",
+        'searchNav' : "url(./svgs/search-nav.svg)",
         'twitter' : "url(./svgs/twitter.svg)",
-        'user' : "url(./svgs/user.svg)"
+        'user' : "url(./svgs/user.svg)",
+        'userNav' : "url(./svgs/user-nav.svg)"
       },
       backgroundColor : theme => ({
         ...theme('colors'),
@@ -61,4 +66,3 @@ module.exports = {
     require('tailwind-scrollbar-hide')
   ],
 }
-
